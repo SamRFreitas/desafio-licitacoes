@@ -1,26 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="table-responsive p-5">
+    <!-- <TableLicitacao /> -->
+    <TableT />
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
 
+<script>
+// // // import TableLicitacao from './components/TableLicitacao/TableLicitacao.vue'
+import TableT from './components/TableT.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // TableLicitacao,
+    TableT
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
