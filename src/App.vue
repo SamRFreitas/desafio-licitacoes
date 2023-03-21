@@ -33,7 +33,7 @@
           </select>
           <button
             type="button"
-            class="btn btn-primary mt-2 w-25"
+            class="effecti-button mt-2 w-25"
             @click="getLicitacoesByYear"
           >
             Buscar Licitações
@@ -42,7 +42,6 @@
       </div>
       <Licitacoes
         :rows="state.licitacoes"
-        class="mt-4"
       />
     </div>
   </div>
