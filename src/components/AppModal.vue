@@ -1,19 +1,19 @@
 <template>
   <div
     v-if="visible"
-    class="modal app-modal"
+    class="modal app-modal modal-lg"
     tabindex="-1"
     style="display: block;"
   >
     <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title text-center w-100">
+        <div class="modal-header header-color">
+          <h5 class="modal-title text-center text-white w-100">
             {{ modalTitle }}
           </h5>
           <button
             type="button"
-            class="btn-close"
+            class="btn-close btn-close-white"
             data-bs-dismiss="modal"
             aria-label="Close"
             @click="closeModal()"
