@@ -35,7 +35,7 @@
 
         <a
           class="d-flex align-items-center btn btn-danger ms-2"
-          :href="props.row.anexoLink"
+          :href="props.row.link"
           target="_blank"
         >
           <fa icon="link" />
