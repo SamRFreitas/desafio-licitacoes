@@ -7,3 +7,10 @@
 .header-color {
   background-color: #008CFF;
 }
+
+.effecti-button {
+  @extend .btn;
+  @extend .btn-primary;
+  background-color: #008CFF;
+  border-color: #008CFF;
+}
