@@ -33,7 +33,7 @@
           </select>
           <button
             type="button"
-            class="effecti-button mt-2 w-25"
+            class="desafio-button mt-2 w-25"
             @click="getLicitacoesByYear"
           >
             Buscar Licitações

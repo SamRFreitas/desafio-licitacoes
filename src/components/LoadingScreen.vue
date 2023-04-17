@@ -1,19 +1,14 @@
 <template>
   <div class="b d-flex flex-column justify-content-center align-items-center vh-100 ">
     <div class="d-flex flex-column justify-content-center align-items-center ">
-      <BaseIcon
-        name="logoLoading"
-        width="130"
-        height="130"
-      />
-      <p class="g text-gradient display-6 text-white ms-2 mt-3">
+      <div class="loader" />
+      <p class="g text-gradient display-5 text-white ms-2 mt-4">
         {{ onLoadingText }}
       </p>
     </div>
   </div>
 </template>
 <script>
-import BaseIcon from './BaseIcon.vue'
 
 export default {
   props: {
@@ -21,9 +16,6 @@ export default {
       type: String,
       deafult: 'Carregando...'
     }
-  },
-  components: {
-    BaseIcon
   }
 }
 </script>
@@ -38,8 +30,8 @@ export default {
 
 .loader {
   position: relative;
-  width: 75px;
-  height: 75px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background: linear-gradient(45deg, transparent, transparent 40%, #FFF );
   animation: animate 2s linear infinite;
@@ -56,13 +48,6 @@ export default {
   border-radius: 50%;
   z-index: 1000;
 }
-
-svg {
-  fill: white;
-  -webkit-filter: drop-shadow( 0 0 10px #fff);
-  filter: drop-shadow( 0 0 10px #fff);
-}
-
 .loader::after {
   content: '';
   position: absolute;

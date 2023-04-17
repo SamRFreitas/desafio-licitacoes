@@ -1,4 +1,4 @@
-# effecti-desafio
+# desafio licitações
 
 ## Project setup
 ```
