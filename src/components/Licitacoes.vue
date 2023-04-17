@@ -28,7 +28,7 @@
       >
         <button
           @click="openModal(props)"
-          class="effecti-button"
+          class="desafio-button"
         >
           Detalhes
         </button>
